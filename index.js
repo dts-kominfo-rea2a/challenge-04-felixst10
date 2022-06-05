@@ -13,7 +13,7 @@ const createDate = (datesArray, indexDate = null) => {
   if (indexDate === null) { 
       let arrayDate = [];
       for (let dates = 0; dates < datesArray.length; dates++) {
-        arrayToString.push(Date.parse(datesArray[dates])/1000);          
+        arrayDate.push(Date.parse(datesArray[dates])/1000);          
       }
       return arrayDate .sort() .join("-");
   } else {
